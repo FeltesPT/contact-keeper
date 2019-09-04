@@ -1,4 +1,0 @@
-{
-	"mongoURI": "mongodb+srv://tdias:tdias@contactkeeper-ywb2o.mongodb.net/test?retryWrites=true&w=majority",
-	"jwtSecret": "feltesIsAwesome"
-}
