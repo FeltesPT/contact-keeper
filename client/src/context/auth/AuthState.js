@@ -31,8 +31,6 @@ const AuthState = props => {
 			setAuthToken(localStorage.token);
 		}
 
-		console.log(`TOKEN! ${localStorage.token}`);
-
 		try {
 			const res = await axios.get('/api/auth');
 
@@ -97,7 +95,7 @@ const AuthState = props => {
 
 	// Logout
 	const logout = () => {
-		console.log('logout');
+		dispatch({ type: LOGOUT });
 	};
 
 	// Clear Errors
