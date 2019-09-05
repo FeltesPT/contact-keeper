@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
-const config = require('config');
-const db = process.env.URI; //config.get('mongoURI');
+// const config = require('config');
+// const db = config.get('mongoURI');
 
 const connectDB = () => {
 	mongoose
-		.connect(db, {
+		.connect(process.env.MONGODB_URI, {
 			useNewUrlParser: true,
 			useCreateIndex: true,
 			useFindAndModify: false
